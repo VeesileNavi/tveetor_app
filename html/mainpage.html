@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>  
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </style>
+  </head>
+  <body>
+    <div class="header">
+    	<header>
+    		Blog Everything!
+    	</header>
+    <ul>
+     <form name="addpost" action="../php/endpoints/add_tveets.php" method="POST">
+      <small id="Enter" class="form-text text-muted smalltext">Enter your message</small>
+     <textarea name="text" cols="30" rows="3"  placeholder="Введите текст" style="resize: none"></textarea></p>
+      <input type="submit" name="post_add" value="Создать пост" class="btn btn-primary" />
+
+     <form name="showpost" action="../php/endpoints/show_tveets.php" method="GET">
+     <h2>Список постов</h2>
+     <output name="messages"></output>
+     </form>
+   </ul>
+  </body>
+</html>
